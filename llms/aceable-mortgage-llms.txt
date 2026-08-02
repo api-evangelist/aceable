@@ -1,0 +1,47 @@
+## mortgage.aceable.com/llms.txt
+
+
+# Aceable Mortgage
+
+
+> Aceable Mortgage (formerly Real Estate Institute) provides NMLS-approved Mortgage Loan Originator (MLO) pre-license and continuing education (CE) courses. Available in 7 states plus the required 20-hour national NMLS component. Courses from $71. Named to Newsweek's 2025 Best Online Platforms list.
+
+
+Important notes:
+
+
+- Aceable Mortgage is a licensing *education* company for Mortgage Loan Originators (MLOs). It is not a mortgage lender or broker.
+- NMLS Provider ID: 1400102. Formerly operated as "Real Estate Institute" — references to Real Estate Institute mortgage courses refer to this same provider.
+- All MLOs must complete a 20-hour NMLS national pre-license course regardless of state; available in live webinar ($349) and self-paced online instructor-led ($279) formats
+- Pre-license states: AZ, CA, FL, IN, NY, TN, TX (plus national NMLS component required in all states)
+- Part of Aceable Brands alongside aceable.com (driving), Aceable Agent (real estate), and Aceable Insurance
+
+
+## Pre-License Courses
+
+
+- [20-Hour NMLS National Pre-License Course](https://mortgage.aceable.com/pre-license/national/): Federally required national component; live webinar ($349) or online instructor-led ($279)
+- [Live Webinar Format](https://mortgage.aceable.com/pre-license/live-webinar/): Instructor-led live sessions; $349
+- [Online Instructor-Led Format](https://mortgage.aceable.com/pre-license/online-instructor-led/): Async instructor-led; $279
+- [State Pre-License Courses](https://mortgage.aceable.com/pre-license/): State-specific pages (AZ, CA, FL, IN, NY, TN, TX); TX state-specific from $71
+
+
+## Continuing Education
+
+
+- [MLO CE Courses](https://mortgage.aceable.com/continuing-education/): Annual CE required in all states for MLO license renewal
+- [CE Course Selector](https://mortgage.aceable.com/ce-course-selector/): Interactive tool to find the right CE course by state and license type
+
+
+## Company
+
+
+- [Partner with Aceable Mortgage](https://mortgage.aceable.com/partnerships/): Employer and company-wide MLO licensing partnerships
+- [About Aceable Mortgage](https://mortgage.aceable.com/about-us/): NMLS credentials, history as Real Estate Institute, Newsweek 2025 award
+
+
+## Optional
+
+
+- [Referral Program](https://mortgage.aceable.com/referral/invite/): Student referral program
+- [Your Future in Mortgage](https://mortgage.aceable.com/your-future-in-mortgage-starts-here/): Career exploration and course finder

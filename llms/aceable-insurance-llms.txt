@@ -1,0 +1,50 @@
+## insurance.aceable.com/llms.txt
+
+
+# Aceable Insurance
+
+
+> Aceable Insurance offers online state-approved insurance pre-license and continuing education (CE) courses for individuals pursuing a Property & Casualty, Life & Health, or combined All-in-One insurance license. Pre-license available in 13 states. Courses from $59 (CE) to $559 (All-in-One pre-license bundle).
+
+
+Important notes:
+
+
+- Aceable Insurance is a licensing *education* company — it prepares students to pass state insurance licensing exams. It is not an insurance carrier, agency, or broker.
+- Pre-license states: AZ, CA, FL, GA, MA, MI, MO, OH, OK, PA, TN, TX, WA
+- Most states offer Property & Casualty, Life & Health, and All-in-One bundle courses; Florida additionally offers a Personal Lines course
+- CE states: CA, IL, TX
+- In Illinois, Aceable Insurance previously operated as Real Estate Institute
+- Part of Aceable Brands alongside aceable.com (driving), Aceable Agent (real estate), and Aceable Mortgage
+
+
+## Pre-License Courses
+
+
+- [Insurance Pre-License Courses](https://insurance.aceable.com/pre-license/): Pre-license courses across 13 states
+- [Property & Casualty License Course](https://insurance.aceable.com/pre-license/texas/property-casualty/): Available in most states
+- [Life & Health License Course](https://insurance.aceable.com/pre-license/texas/life-health/): Available in most states
+- [All-in-One Bundle](https://insurance.aceable.com/pre-license/texas/all-in-one/): Combined P&C + L&H; TX from $475 (reg. $559)
+- [Florida Personal Lines Course](https://insurance.aceable.com/pre-license/florida/personal-lines/): FL-specific personal lines license course
+
+
+## Continuing Education
+
+
+- [California CE](https://insurance.aceable.com/continuing-education/california/): From $59
+- [Illinois CE](https://insurance.aceable.com/continuing-education/illinois/): Formerly offered as Real Estate Institute in IL
+- [Texas CE](https://insurance.aceable.com/continuing-education/texas/)
+
+
+## Resources
+
+
+- [Partner with Aceable Insurance](https://insurance.aceable.com/insurance-partnerships/): Employer and agency bulk licensing partnerships
+- [Aceable Insurance App](https://insurance.aceable.com/aceable-insurance-app/): Mobile app for studying on the go
+
+
+## Optional
+
+
+- [About Aceable Insurance](https://insurance.aceable.com/about-us/): About the brand and licensing approach
+- [Your Future in Insurance](https://insurance.aceable.com/your-future-in-insurance-starts-here/): Career exploration and course finder

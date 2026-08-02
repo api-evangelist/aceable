@@ -1,0 +1,68 @@
+generated: '2026-08-02'
+method: probed
+source: live GET probes of /.well-known/* across every Aceable Brands host
+summary:
+  documents_found: 0
+  note: >-
+    No RFC 8615 well-known discovery document is served on any Aceable host. Two
+    hosts must be read carefully on re-run: app.aceable.com is a single-page app
+    whose catch-all answers HTTP 200 with an HTML shell (3,565 bytes) for every
+    path, so a 200 there is a false positive and is recorded as html-catchall;
+    api.aceable.com answers HTTP 401 with
+    {"errorList":[{"message":"Cannot Authorize Application ID","code":40100}]}
+    for every path, so its well-known surface is gated rather than absent.
+hosts:
+- host: https://www.aceable.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://app.aceable.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 200, result: html-catchall}
+  - {path: /.well-known/oauth-authorization-server, status: 200, result: html-catchall}
+  - {path: /.well-known/api-catalog, status: 200, result: html-catchall}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://api.aceable.com
+  documents:
+  - {path: /.well-known/security.txt, status: 401, result: auth-gated}
+  - {path: /.well-known/openid-configuration, status: 401, result: auth-gated}
+  - {path: /.well-known/oauth-authorization-server, status: 401, result: auth-gated}
+  - {path: /.well-known/api-catalog, status: 401, result: auth-gated}
+  - {path: /.well-known/ai-plugin.json, status: 401, result: auth-gated}
+  - {path: /.well-known/agent-card.json, status: 401, result: auth-gated}
+  - {path: /.well-known/agent.json, status: 401, result: auth-gated}
+- host: https://www.aceableagent.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://insurance.aceable.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://mortgage.aceable.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+- host: https://partnerships.aceable.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl -s -o /dev/null -w '%{http_code}' -L

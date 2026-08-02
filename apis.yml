@@ -1,17 +1,59 @@
 aid: aceable
 name: Aceable
-description: 'Aceable is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Aceable (Aceable Brands) is an Austin, Texas mobile-first online education
+  company founded in 2013 that builds state-accredited licensing and continuing-education
+  courses across four brands: Aceable (drivers ed, defensive driving and traffic school
+  in 40+ US states), Aceable Agent (real estate pre-license, post-license and CE in
+  16 states, plus PrepAgent exam prep in all 50), Aceable Insurance (Property & Casualty
+  and Life & Health pre-license in 13 states, CE in CA/IL/TX) and Aceable Mortgage
+  (NMLS-approved MLO pre-license and CE in 7 states plus the required 20-hour national
+  component; NMLS Provider ID 1400102). More than 20 million students have been licensed
+  through Aceable, at roughly 1.5 million per year. The company raised about $106M
+  across five rounds from Silverton Partners, Floodgate, Sageview Capital and HGGC,
+  and operates a B2B partner program (affiliate and bulk-buy) for driving schools,
+  school districts, brokerages, carriers and mortgage employers. Aceable publishes
+  no public developer API or developer portal; its platform API at api.aceable.com
+  is a private, application-ID-gated backend serving the Aceable web and mobile apps.'
 url: https://raw.githubusercontent.com/api-evangelist/aceable/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
+image: https://xgrit-ecom.imgix.net/ace/Aceable-OG-Image.png
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Education
+- EdTech
+- Online Learning
+- Continuing Education
+- Licensing
+- Certification
+- Drivers Education
+- Real Estate
+- Insurance
+- Mortgage
+- Compliance Training
+- Austin
+x-api-surface:
+  public_api: false
+  note: No public developer API, developer portal, OpenAPI, GraphQL, MCP server or
+    A2A agent card was found on any Aceable host as of 2026-08-02. A private platform
+    API is observable at https://api.aceable.com (Express on Heroku) but every path
+    returns HTTP 401 {"errorList":[{"message":"Cannot Authorize Application ID","code":40100}]},
+    so it is an application-gated first-party backend rather than a published API
+    product.
+  probed_hosts:
+  - www.aceable.com
+  - aceable.com
+  - app.aceable.com
+  - api.aceable.com
+  - www.aceableagent.com
+  - insurance.aceable.com
+  - mortgage.aceable.com
+  - partnerships.aceable.com
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +62,52 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.aceable.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/aceable_stock/
+- type: About
+  url: https://www.aceable.com/company/
+- type: Blog
+  url: https://www.aceable.com/blog/
+- type: Support
+  url: https://www.aceable.com/support/
+- type: Login
+  url: https://app.aceable.com/user/signin
+- type: PrivacyPolicy
+  url: https://www.aceable.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.aceableagent.com/terms-and-conditions/
+- type: GitHubOrganization
+  url: https://github.com/aceable
+- type: LinkedIn
+  url: https://www.linkedin.com/company/aceable
+- type: Careers
+  url: https://www.aceable.com/company/careers/
+- type: Partners
+  url: https://partnerships.aceable.com/
+- type: Accessibility
+  url: https://www.aceable.com/accessibility-statement/
+- type: LLMsTxt
+  name: Aceable (drivers ed) llms.txt
+  url: llms/aceable-llms.txt
+- type: LLMsTxt
+  name: Aceable Agent (real estate) llms.txt
+  url: llms/aceable-agent-llms.txt
+- type: LLMsTxt
+  name: Aceable Insurance llms.txt
+  url: llms/aceable-insurance-llms.txt
+- type: LLMsTxt
+  name: Aceable Mortgage llms.txt
+  url: llms/aceable-mortgage-llms.txt
+- type: LLMsTxt
+  name: Aceable Partner Program llms.txt
+  url: llms/aceable-partnerships-llms.txt
+- type: DomainSecurity
+  url: security/aceable-domain-security.yml
+- type: Conformance
+  url: conformance/aceable-conformance.yml
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

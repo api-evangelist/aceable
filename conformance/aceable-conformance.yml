@@ -1,0 +1,87 @@
+generated: '2026-08-02'
+method: searched
+source: https://www.aceable.com/llms.txt, https://www.aceableagent.com/llms.txt, https://insurance.aceable.com/llms.txt,
+  https://mortgage.aceable.com/llms.txt, https://partnerships.aceable.com/llms.txt
+note: >-
+  Aceable is a regulated education provider, not an API provider. Its published
+  conformance posture is state and federal course accreditation, not API or
+  security standards. The API/cross-cutting standards below are recorded as
+  not-applicable rather than failing, because Aceable publishes no public API
+  contract of any kind (see x-api-surface in apis.yml and
+  well-known/aceable-well-known.yml).
+accreditations:
+- id: tdlr-texas-drivers-ed
+  authority: Texas Department of Licensing and Regulation (TDLR)
+  scope: Texas parent-taught drivers education
+  identifier: 'C2839'
+  conforms: true
+  evidence: https://www.aceable.com/llms.txt
+- id: ca-dmv-drivers-ed
+  authority: California Department of Motor Vehicles
+  scope: California drivers education
+  conforms: true
+  evidence: https://www.aceable.com/llms.txt
+- id: trec-texas-real-estate
+  authority: Texas Real Estate Commission (TREC)
+  scope: 180-hour Texas real estate pre-license education (six 30-hour courses) and
+    SAE post-licensing
+  conforms: true
+  evidence: https://www.aceableagent.com/llms.txt
+- id: nmls-mlo-education
+  authority: Nationwide Multistate Licensing System (NMLS)
+  scope: 20-hour national MLO pre-license component and MLO continuing education
+  identifier: 'NMLS Provider ID 1400102'
+  conforms: true
+  evidence: https://mortgage.aceable.com/llms.txt
+- id: state-insurance-prelicense
+  authority: State insurance departments (AZ, CA, FL, GA, MA, MI, MO, OH, OK, PA,
+    TN, TX, WA)
+  scope: Property & Casualty and Life & Health pre-license; CE in CA, IL, TX
+  conforms: true
+  evidence: https://insurance.aceable.com/llms.txt
+- id: perkins-v-cte
+  authority: US Department of Education (Strengthening Career and Technical Education
+    for the 21st Century Act, Perkins V)
+  scope: High school and district CTE partnerships are Perkins V funding eligible
+  conforms: true
+  evidence: https://partnerships.aceable.com/llms.txt
+standards:
+- id: openapi
+  conforms: false
+  not_applicable: true
+  evidence: no OpenAPI/Swagger document found on any host (openapi.json, openapi.yaml,
+    swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc all 404 or auth-gated)
+- id: graphql
+  conforms: false
+  not_applicable: true
+  evidence: /graphql returns the marketing 404 page on www hosts and the SPA shell
+    on app.aceable.com; no GraphQL endpoint observed
+- id: asyncapi
+  conforms: false
+  not_applicable: true
+  evidence: no event, streaming or webhook surface published
+- id: mcp
+  conforms: false
+  not_applicable: true
+  evidence: no hosted MCP server found
+- id: a2a-agent-card
+  conforms: false
+  not_applicable: true
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json miss on every
+    host
+- id: oauth2
+  conforms: false
+  not_applicable: true
+  evidence: /.well-known/oauth-authorization-server not served; api.aceable.com uses
+    an application-ID authorization model (HTTP 401, code 40100)
+- id: oidc
+  conforms: false
+  not_applicable: true
+  evidence: /.well-known/openid-configuration not served on any public host
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on every Aceable host
+- id: llms-txt
+  conforms: true
+  evidence: llms.txt published on all five brand hosts (aceable.com, aceableagent.com,
+    insurance.aceable.com, mortgage.aceable.com, partnerships.aceable.com)

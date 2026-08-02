@@ -1,0 +1,73 @@
+generated: '2026-08-02'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts + observed Aceable Brands hosts
+hosts:
+- host: www.aceable.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 27 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: app.aceable.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  2 23:53:11 2026 GMT
+  hsts: false
+  note: student course application (single-page app; returns HTTP 200 HTML for every
+    path, including /.well-known/*)
+- host: api.aceable.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 11 02:04:43 2026 GMT
+  hsts: false
+  note: private platform API (Express on Heroku); every probed path returns HTTP 401
+    "Cannot Authorize Application ID" (code 40100)
+- host: www.aceableagent.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 27 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: insurance.aceable.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 11 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: mortgage.aceable.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 17 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: partnerships.aceable.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 19 16:30:59 2026 GMT
+  hsts: false
+domains:
+- domain: aceable.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: aceableagent.com
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "amazon.com"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+findings:
+- All public marketing hosts serve TLS 1.3 and set HSTS with a one-year max-age; the
+  application host (app.aceable.com), the API host (api.aceable.com) and the partner
+  marketing host (partnerships.aceable.com) do not set HSTS.
+- Neither aceable.com nor aceableagent.com is DNSSEC-signed.
+- aceable.com publishes no CAA record; aceableagent.com pins issuance to Let's Encrypt,
+  Amazon and DigiCert.
+- Both registrable domains publish SPF and DMARC at p=quarantine (not reject).
+- No /.well-known/security.txt is served on any Aceable host and no vulnerability
+  disclosure or bug bounty program was found (see well-known/aceable-well-known.yml).
