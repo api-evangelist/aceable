@@ -19,6 +19,17 @@ x-type: company
 x-source: harvest:secondary-market
 x-tier: profiled
 x-tier-reason: enrichment-pipeline
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://xgrit-ecom.imgix.net/ace/Aceable-OG-Image.png
 specificationVersion: '0.23'
 created: '2026-08-02'
