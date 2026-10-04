@@ -55,7 +55,7 @@ tags:
 - Licensing
 - Certification
 - Drivers Education
-- Real-Estate
+- Real Estate
 - Insurance
 - Mortgage
 - Compliance Training
@@ -74,6 +74,7 @@ tags_raw:
 - Mortgage
 - Compliance Training
 - Austin
+- Real-Estate
 x-api-surface:
   public_api: false
   note: No public developer API, developer portal, OpenAPI, GraphQL, MCP server or
