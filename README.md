@@ -64,26 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aceable (Aceable Brands) is an Austin, Texas mobile-first online education company founded in 2013 that builds state-accredited licensing and continuing-education courses across four brands:
+Aceable (Aceable Brands) is an Austin, Texas mobile-first online education company founded in 2013 that builds state-accredited licensing and continuing-education courses across four brands: Aceable (drivers ed, defensive driving and traffic school in 40+ US states), Aceable Agent (real estate pre-license, post-license and CE in 16 states, plus PrepAgent exam prep in all 50), Aceable Insurance (Property & Casualty and Life & Health pre-license in 13 states, CE in CA/IL/TX) and Aceable Mortgage (NMLS-approved MLO pre-license and CE in 7 states plus the required 20-hour national component; NMLS Provider ID 1400102). More than 20 million students have been licensed through Aceable, at roughly 1.5 million per year. The company raised about $106M across five rounds from Silverton Partners, Floodgate, Sageview Capital and HGGC, and operates a B2B partner program (affiliate and bulk-buy) for driving schools, school districts, brokerages, carriers and mortgage employers. Aceable publishes no public developer API or developer portal; its platform API at api.aceable.com is a private, application-ID-gated backend serving the Aceable web and mobile apps.
 
-- **Aceable** — drivers ed, defensive driving and traffic school in 40+ US states — https://www.aceable.com/
-- **Aceable Agent** — real estate pre-license, post-license and CE in 16 states, plus PrepAgent exam prep in all 50 — https://www.aceableagent.com/
-- **Aceable Insurance** — Property & Casualty and Life & Health pre-license in 13 states, CE in CA/IL/TX — https://insurance.aceable.com/
-- **Aceable Mortgage** — NMLS-approved MLO pre-license and CE in 7 states plus the required 20-hour national component (NMLS Provider ID 1400102) — https://mortgage.aceable.com/
+**Areas:** Company · Education · EdTech · E-Learning · Continuing Education · Licensing · Certification · Drivers Education · Real Estate · Insurance · Mortgage · Compliance Training
 
-More than 20 million students have been licensed through Aceable, at roughly 1.5 million per year. A B2B partner program (affiliate and bulk-buy) serves driving schools, school districts, brokerages, carriers and mortgage employers — https://partnerships.aceable.com/
+## Aceable on APIs.io
 
-## API surface
+Everything profiled for Aceable is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aceable/](https://apis.io/providers/aceable/)** — or go straight to one of the APIs or properties below.
 
-**Aceable publishes no public developer API.** As of 2026-08-02 no OpenAPI/Swagger, GraphQL schema, AsyncAPI, MCP server, A2A agent card or developer portal was found on any Aceable host. A private platform API is observable at `https://api.aceable.com` (Express on Heroku), but every probed path returns HTTP 401 `{"errorList":[{"message":"Cannot Authorize Application ID","code":40100}]}` — an application-gated first-party backend for the Aceable web and mobile apps, not a published API product.
+### Published properties
 
-The GitHub organization https://github.com/aceable (named "XGRIT (Platform)") holds seven public repositories — CI/CD actions, an Angular/React interop library and boilerplates — and no client SDKs.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## What is captured here
+#### Security (1)
 
-| Artifact | What it holds |
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aceable Domain Security](https://apis.io/security/aceable/aceable-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.aceable.com/)
+- [Support](https://www.aceable.com/support/)
+- [Blog](https://www.aceable.com/blog/)
+- [Terms of service](https://www.aceableagent.com/terms-and-conditions/)
+- [Privacy policy](https://www.aceable.com/privacy-policy/)
+- [GitHub](https://github.com/aceable)
+
+## API Evangelist rating
+
+**Kin Score 15.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `llms/` | The five verbatim `llms.txt` files Aceable publishes, one per brand host |
-| `well-known/` | Full `/.well-known/*` probe results across every host (zero documents found) |
-| `security/` | TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe across seven hosts and two registrable domains |
-| `conformance/` | Published state and federal course accreditations (TDLR, CA DMV, TREC, NMLS, state insurance departments, Perkins V) plus API-standard applicability |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aceable/](https://apis.io/providers/aceable/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aceable: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aceable/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
